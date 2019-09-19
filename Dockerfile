@@ -4,10 +4,10 @@
 FROM golang:latest
 
 # Add Maintainer Info
-LABEL maintainer="Rajeev Singh <rajeevhub@gmail.com>"
+LABEL maintainer="LAMPV <lampv@gmail.com>"
 
 # Set the Current Working Directory inside the container
-WORKDIR /app
+WORKDIR /:/go/src/github.com/hellowithgodocker
 
 # Copy go mod and sum files
 COPY go.mod ./
